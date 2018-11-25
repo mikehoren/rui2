@@ -43,6 +43,8 @@ time, mark, audio, video, input, textarea, a {
   padding: 0;
   font-family: Helvetica, Arial, Sans-serif;
   color: $default-text-color;
+  font-size: 13px;
+  line-height: 18px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 

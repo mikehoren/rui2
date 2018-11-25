@@ -8,6 +8,10 @@ import styles from './Modal.css'
 
 const cx = classNames.bind(styles)
 
+// @class Textarea
+// @description Renders a Modal with styling. Defaults closed but can be opened with the "open" prop.
+//  It can render title-less or with a title with standard formatting.  It renders content via children.
+
 class Modal extends React.PureComponent {
 
   render() {

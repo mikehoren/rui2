@@ -6,6 +6,9 @@ import styles from './LoadingIcon.css'
 
 const cx = classNames.bind(styles)
 
+// @class LoadingIcon
+// @description Renders an icon communicating a loading state.
+
 const LoadingIcon = props => <div className={ cx(styles.cssloadLoader, props.className) }></div>
 
 LoadingIcon.defaultProps = {

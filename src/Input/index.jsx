@@ -10,6 +10,14 @@ import styles from './Input.css'
 
 const cx = classNames.bind(styles)
 
+// @class Input
+// @description Renders an Input with styling. Available statuses:
+//  - default empty input
+//  - error state
+//  - success state
+//  - loading state
+//  - block rendering
+
 class Input extends React.PureComponent {
 
   render() {

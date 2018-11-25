@@ -11,7 +11,10 @@ export const TYPE_SECONDARY = 'secondary'
 export const TYPE_DANGER = 'danger'
 
 // @class Button
-// @description Renders a button with styling
+// @description Renders a button with styling. Available variants:
+//  - default styling
+//  - secondary styling
+//  - danger styling
 
 class Button extends React.PureComponent {
 

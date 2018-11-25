@@ -8,6 +8,8 @@ import LoadingIcon from './LoadingIcon'
 
 import Modal from './Modal'
 
+import Textarea from './Textarea'
+
 export {
   Button,
   SecondaryButton,
@@ -18,4 +20,6 @@ export {
   LoadingIcon,
 
   Modal,
+
+  Textarea,
 }

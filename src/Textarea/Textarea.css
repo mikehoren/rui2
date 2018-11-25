@@ -1,0 +1,22 @@
+@import "../_css";
+
+.textarea {
+  border: $form-border;
+  border-radius: $border-radius;
+  background: white;
+  padding: $padding;
+  transition: border .15s;
+  resize: none;
+  min-height: 100px;
+  overflow: hidden;
+  &.block {
+    display: block;
+    width: 100%;
+  }
+  &.error {
+    border: 1px solid $form-error-color;
+  }
+  &:focus {
+    border: 1px solid $form-highlight-color;
+  }
+}
