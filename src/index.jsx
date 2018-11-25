@@ -10,6 +10,8 @@ import Modal from './Modal'
 
 import Textarea from './Textarea'
 
+import Checkbox from './Checkbox'
+
 export {
   Button,
   SecondaryButton,
@@ -22,4 +24,6 @@ export {
   Modal,
 
   Textarea,
+
+  Checkbox,
 }

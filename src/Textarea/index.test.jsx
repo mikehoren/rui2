@@ -22,4 +22,28 @@ describe('<Textarea />', () => {
     expect(m.mock.calls.length).toEqual(1)
   })
 
+  it('calls onClick on input click', () => {
+    const m = jest.fn( e => e)
+    const el = mount(<Textarea onClick={ m } />)
+    expect(m.mock.calls.length).toEqual(0)
+    el.find('textarea').simulate('click')
+    expect(m.mock.calls.length).toEqual(1)
+  })
+
+  it('calls onFocus on input focus', () => {
+    const m = jest.fn( e => e)
+    const el = mount(<Textarea onFocus={ m } />)
+    expect(m.mock.calls.length).toEqual(0)
+    el.find('textarea').simulate('focus')
+    expect(m.mock.calls.length).toEqual(1)
+  })
+
+  it('calls onBlur on input blur', () => {
+    const m = jest.fn( e => e)
+    const el = mount(<Textarea onBlur={ m } />)
+    expect(m.mock.calls.length).toEqual(0)
+    el.find('textarea').simulate('blur')
+    expect(m.mock.calls.length).toEqual(1)
+  })
+
 })
