@@ -1,0 +1,53 @@
+@import "../_css";
+
+.container {
+  position: relative;
+  display: inline-block;
+  &.block {
+    display: block;
+  }
+}
+
+.input {
+  border: $form-border;
+  border-radius: $border-radius;
+  background: white;
+  padding: $padding;
+  transition: border .15s;
+  &.block {
+    display: block;
+    width: 100%;
+  }
+  &.hasIcon {
+    padding-right: 23px;
+  }
+  &.errorInput {
+    border: 1px solid $form-error-color;
+  }
+  &:focus {
+    border: 1px solid $form-highlight-color;
+  }
+}
+
+.iconContainer {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0;
+  right: 0;
+}
+
+.icon {
+  font-size: 18px !important;
+  position: relative;
+  top: -9px;
+  margin-right: 5px;
+}
+
+.success {
+  color: $form-success-color;
+}
+
+.error {
+  color: $form-error-color;
+}

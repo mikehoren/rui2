@@ -1,6 +1,21 @@
+@import "../_css";
+
+$normal-bg: $form-highlight-color;
+$normal-hover-bg: #1e88cc;
+$normal-active-bg: #1374b3;
+$normal-border: 1px solid #1a7cbb;
+
+$secondary-bg: #F5F5F5;
+$secondary-hover-bg: #EEE;
+$secondary-active-bg: #E7E7E7;
+$secondary-border: 1px solid #DDD;
+
+$danger-bg: #f56363;
+$danger-hover-bg: #da3535;
+$danger-active-bg: #cc2a2a;
+$danger-border: 1px solid #c11515;
+
 .button {
-  background: #2796de;
-  border: 1px solid #1a7cbb;
   font-family: Helvetica, Arial, Sans-serif;
   padding: 8px 25px;
   border-radius: 3px;
@@ -9,58 +24,58 @@
   box-shadow: 0px 1px 2px rgba(0,0,0,.1);
   cursor: pointer;
   &:disabled {
-    opacity: .6;
+    opacity: $disabled-opacity;
     cursor: default;
   }
 }
 
 .normal {
-  background: #2796de;
-  border: 1px solid #1a7cbb;
+  background: $normal-bg;
+  border: $normal-border;
   color: white;
   &:hover {
-    background: #1e88cc;
+    background: $normal-hover-bg;
   }
   &:active {
-    background: #1374b3;
+    background: $normal-active-bg;
   }
   &:disabled {
     &:hover, &:active {
-      background: #2796de;
+      background: $normal-bg;
     }
   }
 }
 
 .secondary {
-  background: #F5F5F5;
-  border: 1px solid #DDD;
+  background: $secondary-bg;
+  border: $secondary-border;
   color: #444;
   &:hover {
-    background: #EEE;
+    background: $secondary-hover-bg;
   }
   &:active {
-    background: #E7E7E7;
+    background: $secondary-active-bg;
   }
   &:disabled {
     &:hover, &:active {
-      background: #F5F5F5;
+      background: $secondary-bg;
     }
   }
 }
 
 .danger {
-  background: #f56363;
-  border: 1px solid #c11515;
+  background: $danger-bg;
+  border: $danger-border;
   color: white;
   &:hover {
-    background: #da3535;
+    background: $danger-hover-bg;
   }
   &:active {
-    background: #cc2a2a;
+    background: $danger-active-bg;
   }
   &:disabled {
     &:hover, &:active {
-      background: #f56363;
+      background: $danger-bg;
     }
   }
 }
