@@ -5,5 +5,6 @@ module.exports = {
     'postcss-preset-env': {},
     'postcss-nesting':{},
     'precss': {},
+    'postcss-extend-rule': {},
   }
 }

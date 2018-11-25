@@ -1,0 +1,78 @@
+@import "../_css";
+
+.container {
+  position: absolute;
+  left: -9999em;
+  opacity: 0;
+  transition: opacity .2s;
+  &.open {
+    position: static;
+    opacity: 1;
+  }
+}
+
+.overlay {
+  background: rgba(0,0,0,.1);
+  &.open {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.modal {
+  transform: translate(-50%);
+  opacity: 0;
+  transition: opacity .1;
+  min-width: 300px;
+  background: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  &.open {
+    transform: translate(-50%);
+    opacity: 1;
+  }
+}
+
+.header {
+  @extend .clearfix;
+  padding: 5px 10px 0 10px;
+  &.titled {
+    padding: 5px 10px;
+    border-bottom: $form-border;
+    margin-bottom: 5px;
+  }
+}
+
+.title {
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.closeIconContainer {
+  float: right;
+  padding: 3px 3px 0 3px;
+  cursor: pointer;
+  color: #AAA;
+  position: relative;
+  top: 2px;
+  &:hover {
+    color: #999;
+  }
+  &:active {
+    color: #888;
+  }
+}
+
+.closeIcon {
+  font-size: 16px !important;
+}
+
+.content {
+  padding: 5px 10px 10px 10px;
+}

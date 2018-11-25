@@ -16,7 +16,6 @@ $danger-active-bg: #cc2a2a;
 $danger-border: 1px solid #c11515;
 
 .button {
-  font-family: Helvetica, Arial, Sans-serif;
   padding: 8px 25px;
   border-radius: 3px;
   transition: background .2s;

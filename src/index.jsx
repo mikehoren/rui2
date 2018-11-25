@@ -6,6 +6,8 @@ import Input from './Input'
 
 import LoadingIcon from './LoadingIcon'
 
+import Modal from './Modal'
+
 export {
   Button,
   SecondaryButton,
@@ -14,4 +16,6 @@ export {
   Input,
 
   LoadingIcon,
+
+  Modal,
 }
