@@ -12,6 +12,8 @@ import Textarea from './Textarea'
 
 import Checkbox from './Checkbox'
 
+import Select from './Select'
+
 export {
   Button,
   SecondaryButton,
@@ -26,4 +28,6 @@ export {
   Textarea,
 
   Checkbox,
+
+  Select,
 }
