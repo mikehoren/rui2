@@ -9,6 +9,7 @@
   resize: none;
   min-height: 100px;
   overflow: hidden;
+  line-height: normal;
   &.block {
     display: block;
     width: 100%;

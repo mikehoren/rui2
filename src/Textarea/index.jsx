@@ -5,6 +5,7 @@ import classNames from 'classnames/bind'
 import styles from './Textarea.css'
 
 export const PADDING = 10
+export const MIN_HEIGHT = 100
 
 const cx = classNames.bind(styles)
 
@@ -39,7 +40,8 @@ class Textarea extends React.PureComponent {
     // by setting height to 0 scrollHeight is equal to the content height of the textarea
     textarea.style.height = '0px'
     const height = textarea.scrollHeight
-    textarea.style.height = `${height + PADDING}px`
+    // fixes text-alignment jump once height reaches min height
+    textarea.style.height = `${height >= MIN_HEIGHT ? height + PADDING : height}px`
     this.props.onChange(e)
   }
 

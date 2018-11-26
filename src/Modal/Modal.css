@@ -23,7 +23,7 @@
 }
 
 .modal {
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity .1;
   min-width: 300px;
@@ -34,7 +34,6 @@
   border-radius: $border-radius;
   box-shadow: $box-shadow;
   &.open {
-    transform: translate(-50%);
     opacity: 1;
   }
 }
