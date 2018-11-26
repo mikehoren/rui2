@@ -1,2 +1,4 @@
-# rui2
-React UI Components
+RUI2
+----
+
+Miscellaneous React UI components.
