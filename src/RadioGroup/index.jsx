@@ -6,6 +6,9 @@ import styles from './RadioGroup.css'
 
 const cx = classNames.bind(styles)
 
+// @class Input
+// @description Renders a radio group 
+
 class RadioGroup extends React.PureComponent {
 
   render() {
