@@ -20,7 +20,8 @@ class Button extends React.PureComponent {
 
   render() {
     return (
-      <button 
+      <button
+        { ...this.props }
         className={ cx(styles.button, this.props.type, this.props.className) } 
         disabled={ this.props.disabled }
         onClick={ this.props.onClick }

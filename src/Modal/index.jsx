@@ -18,12 +18,17 @@ class Modal extends React.PureComponent {
     const {
       open,
       className,
-      ...props
+      locked,
+      title,
+      ...restProps
     } = this.props
     return (
       <div className={ cx(styles.container, { open }) }>
         <div className={ cx(styles.overlay, { open }) } onClick={ this.onClose }></div>
-        <div className={ cx(styles.modal, className, { open })}>
+        <div 
+          { ...restProps }
+          className={ cx(styles.modal, className, { open })}
+        >
           { this.renderHeader() }
           <div className={ cx(styles.content) }>
             { this.props.children }

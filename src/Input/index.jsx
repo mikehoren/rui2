@@ -28,7 +28,7 @@ class Input extends React.PureComponent {
       block,
       className,
       inputClassName,
-      ...props
+      ...restProps
     } = this.props
     return (
       <div 
@@ -42,7 +42,7 @@ class Input extends React.PureComponent {
             errorInput: error,
             block,
           }) }
-          { ...props }
+          { ...restProps }
         />
         <div className={ cx(styles.iconContainer) }>
           { success && <DoneIcon className={ cx(styles.icon, styles.success) } /> }

@@ -17,11 +17,18 @@ class Checkbox extends React.PureComponent {
     const {
       className,
       checked,
+      disabled,
+      ...restProps
     } = this.props
     return (
-      <div tabIndex="0" onClick={ this.onChange } className={ cx(styles.container, className, {
-        checked
-      }) }>
+      <div 
+        { ...restProps }
+        tabIndex="0" 
+        onClick={ this.onChange } 
+        className={ cx(styles.container, className, {
+          checked
+        }) }
+      >
         { checked && <DoneIcon className={ cx(styles.check) } /> }
       </div>
     )
