@@ -50,10 +50,6 @@ class RadioGroup extends React.PureComponent {
     this.props.onChange(e, r)
   }
 
-  getValue() {
-    return this.props.radios.filter( r => r.checked)[0] || ''
-  }
-
 }
 
 RadioGroup.defaultProps = {
