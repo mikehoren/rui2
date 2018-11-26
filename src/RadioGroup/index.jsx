@@ -59,8 +59,14 @@ RadioGroup.defaultProps = {
 }
 
 RadioGroup.propTypes = {
+  // an array of radio objects to render out into radio buttons. Properties:
+  // - label [String] a label to render next to the radio button
+  // - checked [Boolean] is the radio button checked
+  // - disabled [Boolean] Should the radio button be disabled
   radios: PropTypes.array,
+  // a className to apply to each radio button
   className: PropTypes.string,
+  // an onChange callback to call when a radio button has been clicked
   onChange: PropTypes.func,
 }
 

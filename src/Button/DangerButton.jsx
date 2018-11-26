@@ -5,8 +5,8 @@ import Button, { TYPE_DANGER } from './'
 // @description Renders a button with danger styling
 
 const DangerButton = (props) => (<Button
-    type={ TYPE_DANGER }
-    { ...props }
-  />)
+  { ...props }
+  type={ TYPE_DANGER }  
+/>)
 
 export default DangerButton

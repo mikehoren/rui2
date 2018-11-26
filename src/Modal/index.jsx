@@ -73,9 +73,13 @@ Modal.defaultProps = {
 }
 
 Modal.propTypes = {
+  // the title to display when the modal is visible
   title: PropTypes.string,
+  // is the modal open or not
   open: PropTypes.bool,
+  // a callback to call when the modal an action is taken to close the modal
   onClose: PropTypes.func,
+  // a className to apply to the modal
   className: PropTypes.string,
 }
 

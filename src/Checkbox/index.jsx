@@ -51,9 +51,13 @@ Checkbox.defaultProps = {
 }
 
 Checkbox.propTypes = {
+  // is the checkbox checked or not
   checked: PropTypes.bool,
+  // disables the checkbox lightening it and making it unclickable
   disabled: PropTypes.bool,
+  // className to apply to the checkbox
   className: PropTypes.string,
+  // an onChange callback to call when the button is clicked
   onChange: PropTypes.func,
 }
 

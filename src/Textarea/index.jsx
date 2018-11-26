@@ -42,7 +42,7 @@ class Textarea extends React.PureComponent {
     const height = textarea.scrollHeight
     // fixes text-alignment jump once height reaches min height
     textarea.style.height = `${height >= MIN_HEIGHT ? height + PADDING : height}px`
-    this.props.onChange(e)
+    this.props.onChange(e, e.target.value)
   }
 
 }
@@ -54,8 +54,11 @@ Textarea.defaultProps = {
 }
 
 Textarea.propTypes = {
+  // an onChange callback to be called when the textarea value changes
   onChange: PropTypes.func,
+  // should the textarea render in an error state
   error: PropTypes.bool,
+  // should the textarea render as a block element
   block: PropTypes.bool,
 }
 

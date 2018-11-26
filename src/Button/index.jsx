@@ -41,9 +41,13 @@ Button.defaultProps = {
 }
 
 Button.propTypes = {
+  // disable the button lightening the appearance and making it unclickable
   disabled: PropTypes.bool,
+  // designs the type of button changing it's styling
   type: PropTypes.oneOf([TYPE_NORMAL, TYPE_SECONDARY, TYPE_DANGER]),
+  // register a callback when the button is clicked
   onClick: PropTypes.func,
+  // className to apply to the button
   className: PropTypes.string,
 }
 

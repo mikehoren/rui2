@@ -37,12 +37,12 @@ class Input extends React.PureComponent {
         }) }
       >
         <input
+          { ...restProps }
           className={ cx(styles.input, inputClassName, {
             hasIcon: success || error || loading,
             errorInput: error,
             block,
           }) }
-          { ...restProps }
         />
         <div className={ cx(styles.iconContainer) }>
           { success && <DoneIcon className={ cx(styles.icon, styles.success) } /> }
@@ -65,11 +65,17 @@ Input.defaultProps = {
 }
 
 Input.propTypes = {
+  // is the input in an error state
   error: PropTypes.bool,
+  // is the input in a loading state
   loading: PropTypes.bool,
+  // is the input in a success state
   success: PropTypes.bool,
+  // should the input be rendered as a block element
   block: PropTypes.bool,
+  // className to apply to the input container
   className: PropTypes.string,
+  // className to apply to the input
   inputClassName: PropTypes.string,
 }
 

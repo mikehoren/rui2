@@ -5,8 +5,8 @@ import Button, { TYPE_SECONDARY } from './'
 // @description Renders a button with secondary styling
 
 const SecondaryButton = (props) => (<Button
-    type={ TYPE_SECONDARY }
-    { ...props }
-  />)
+  { ...props }
+  type={ TYPE_SECONDARY } 
+/>)
 
 export default SecondaryButton

@@ -25,6 +25,7 @@ class Select extends React.PureComponent {
       error,
       block,
       disabled,
+      selectClassName,
       ...restProps
     } = this.props
     return (
@@ -39,7 +40,7 @@ class Select extends React.PureComponent {
         />
         <select
           { ...restProps }
-          className={ cx(styles.selectInput) }
+          className={ cx(styles.selectInput, selectClassName) }
           onChange={ this.onChange }
           disabled={ disabled }
         >
@@ -79,18 +80,30 @@ Select.defaultProps = {
   options: [],
   onChange: () => null,
   className: '',
+  selectClassName: '',
   error: false,
   block: false,
   disabled: false,
 }
 
 Select.propTypes = {
+  // the current value of the select input, should match a value within the array of options.
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  // An array of options to display for the select input. Properties:
+  // - name [String] the display name of the option
+  // - value [String|Number] a value for the option
   options: PropTypes.array,
+  // an onChange callback to call when an option is selected
   onChange: PropTypes.func,
+  // a className to apply to the select input container
   className: PropTypes.string,
+  // a className to apply to the select input
+  selectClassName: PropTypes.string,
+  // should the select input render in an error state
   error: PropTypes.bool,
+  // should the select input render as a block element
   block: PropTypes.bool,
+  // disables the select input making it uninteractable and lightening it's appearance
   disabled: PropTypes.bool,
 }
 
