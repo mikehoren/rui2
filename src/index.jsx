@@ -14,6 +14,8 @@ import Checkbox from './Checkbox'
 
 import Select from './Select'
 
+import RadioGroup from './RadioGroup'
+
 export {
   Button,
   SecondaryButton,
@@ -30,4 +32,6 @@ export {
   Checkbox,
 
   Select,
+
+  RadioGroup,
 }

@@ -1,0 +1,33 @@
+@import "../_css";
+
+.container {
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+  cursor: pointer
+}
+
+.disabled {
+  opacity: $disabled-opacity;
+  cursor: default;
+}
+
+.radio {
+  border: $form-border;
+  border-radius: 100%;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background: white;
+  transition: background .2s;
+  &.checked {
+    background: $form-highlight-color;
+    border: 1px solid $form-highlight-color;
+  }
+}
+
+.label {
+  position: relative;
+  top: -3px;
+  padding-left: 10px;
+}
